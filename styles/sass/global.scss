@@ -1,0 +1,31 @@
+strong {
+    font-weight: bold;
+}
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: 'oxygen',Calibri, 'Trebuchet MS', sans-serif;
+}
+h1, h2{
+    font-family: 'Concert One';
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.body__dark {
+    background-color: #000;
+    color: #fff;
+    a {
+        color: #fff;
+        border-color: #fff !important;
+    }
+    .active {
+        color: #fff;
+        border-color: #fff !important;
+    }
+
+}
+
+
