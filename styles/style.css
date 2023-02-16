@@ -75,11 +75,68 @@ a {
 }
 .body__dark a {
   color: #fff;
-  border-color: #fff;
+  border-color: #fff !important;
 }
 .body__dark .active {
   color: #fff;
-  border-color: #fff;
+  border-color: #fff !important;
+}
+
+.hl__header__content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.hl__header__logo {
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 60px;
+}
+@media (max-width: 1024px) {
+  .hl__header__logo {
+    font-size: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .hl__header__logo {
+    font-size: 40px;
+  }
+}
+.hl__header__option-contrast {
+  font-family: "oxygen";
+  font-size: 25px;
+  position: fixed;
+  right: 40px;
+  top: 105px;
+  margin-top: 0px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform-origin: right, top;
+  -webkit-transform-origin: right, top;
+  -ms-transform-origin: right, top;
+  z-index: 3;
+}
+@media (max-width: 1024px) {
+  .hl__header__option-contrast {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .hl__header__option-contrast {
+    font-size: 15px;
+  }
+}
+.hl__header__option-contrast span {
+  cursor: pointer;
+}
+.hl__header__option-contrast .active {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+.hl__header__option-contrast .active:hover {
+  border-bottom: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
