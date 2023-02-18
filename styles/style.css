@@ -328,6 +328,9 @@ a {
   text-decoration: underline;
 }
 
+.footer {
+  box-sizing: border-box;
+}
 .footer__div {
   background-color: #000;
   color: #fff;
