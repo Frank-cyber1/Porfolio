@@ -111,10 +111,12 @@ a {
 }
 
 .hl__header__content {
+  background-color: black;
+  color: white;
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
+  padding: 10px 0;
 }
 .hl__header__logo {
   text-align: center;
@@ -164,7 +166,7 @@ a {
   width: 100%;
   background-color: #000;
   padding: 30px;
-  margin-top: 200px;
+  padding-top: 50px;
 }
 @media (max-width: 1024px) {
   .inicio {
@@ -335,10 +337,10 @@ a {
   background-color: #000;
   color: #fff;
   width: 100%;
-  padding: 30px 20px;
+  padding: 15px 0;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .footer__list {
   display: inline;
@@ -382,6 +384,132 @@ a {
 }
 .footer__list li a:hover {
   border-color: transparent;
+}
+
+.hl__header__logo__single {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section0 {
+  margin: 10px 20px;
+  max-height: 100vh;
+}
+@media (max-width: 1024px) {
+  .section0 {
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .section0 {
+    height: auto;
+  }
+}
+.section0__contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 55% 35%;
+  grid-row: repeat(3, auto);
+  grid-template-areas: "tit img cont" "tit img cont" "tit img hech";
+  grid-gap: 5px;
+}
+@media (max-width: 1024px) {
+  .section0__contenedor {
+    grid-template-areas: "tit img cont" "tit img cont" "tit hech cont";
+  }
+}
+@media (max-width: 700px) {
+  .section0__contenedor {
+    grid-template-areas: "tit tit tit" "img img img" "hech hech hech" "cont cont cont";
+  }
+}
+.section0__div1 {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin: auto 30px;
+  transform: rotate(-180deg);
+  grid-area: tit;
+}
+@media (max-width: 700px) {
+  .section0__div1 {
+    writing-mode: horizontal-tb;
+    margin: 10px auto;
+    transform: rotate(0deg);
+  }
+}
+.section0__div2contentimg {
+  grid-area: img;
+}
+.section0__div2contentimg__img {
+  height: 85vh;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.section0__div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: cont;
+  width: 100%;
+}
+.section0__div3__div {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  text-align: center;
+  margin: 20px 50px 20px 20px;
+}
+.section0__div3__div__h3 {
+  font-family: "Concert One";
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.section0__div3__div__list li {
+  padding: 10px 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.section0__div4 {
+  text-align: center;
+  grid-area: hech;
+}
+.section0__div4__hechopor {
+  font-weight: bold;
+  display: inline;
+}
+.section0__div4__autor {
+  text-decoration: underline;
+}
+
+.sectionf__siguiente-anterior {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.sectionf__siguiente-anterior li {
+  display: inline-block;
+}
+.sectionf__siguiente-anterior a {
+  border-bottom: 2px solid black;
+}
+.sectionf__siguiente-anterior a:hover {
+  border-bottom: transparent;
+}
+
+.section0 {
+  height: 75vh;
+}
+.section0__div1 {
+  position: absolute;
+  left: 60%;
+  top: 30%;
+}
+.section0__div1__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

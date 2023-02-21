@@ -1,0 +1,126 @@
+.hl__header__logo__single{
+    margin: 0 auto;
+    text-align: center;
+}
+.section0 {
+    margin: 10px 20px;
+    max-height: 100vh;
+    @media (max-width: 1024px){
+        height: auto;}
+    @media (max-width: 700px){
+        height: auto;}
+    &__contenedor{
+       
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 55% 35%; 
+        grid-row: repeat(3, auto);
+        grid-template-areas: "tit img cont"
+                              "tit img cont" 
+                              "tit img hech" ;
+        grid-gap: 5px;
+        
+        @media (max-width: 1024px){
+            grid-template-areas: "tit img cont"
+                              "tit img cont" 
+                              "tit hech cont";
+           
+        }
+        @media (max-width: 700px){
+            grid-template-areas: "tit tit tit"
+            "img img img" 
+            "hech hech hech"
+            "cont cont cont";                     
+
+    }
+    }
+    &__div1 {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        margin:auto 30px ;
+        transform: rotate(-180deg);
+        grid-area: tit;
+        // white-space: normal;
+        // word-wrap: break-word;
+        @media (max-width: 700px){
+            writing-mode: horizontal-tb;
+            margin:10px auto ;
+            transform: rotate(0deg);  
+        }
+    }
+    &__div2contentimg {
+        grid-area: img;
+        &__img{ 
+            height: 85vh;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    &__div3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: cont;
+        width: 100%;
+
+       
+        &__div{
+            border-top: 3px solid #000;
+            border-bottom: 3px solid #000;
+            text-align: center;
+            margin: 20px 50px 20px 20px;
+           
+            &__h3{
+                font-family: 'Concert One';
+                font-size: 25px;
+                font-weight: bold;
+                padding: 10px 0;
+                
+            }
+            &__list{
+                li{
+                 padding: 10px 0;
+                 text-decoration: underline;   
+                 cursor: pointer;
+                }
+            }
+
+        }
+        
+    }
+    &__div4{
+        text-align: center;
+        grid-area: hech;
+        &__hechopor{
+            font-weight: bold;
+            
+            display: inline;
+        }
+        &__autor {
+        
+            text-decoration: underline;
+        }
+    }
+}
+.sectionf{
+
+  &__siguiente-anterior{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    
+
+    
+     li{
+        display: inline-block;
+        
+     }
+     a{
+        border-bottom: 2px solid black;
+        &:hover{
+            border-bottom: transparent;
+                }
+     }
+}
+}
