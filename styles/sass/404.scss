@@ -1,19 +1,82 @@
-.section0 {
+.section00 {
     height: 75vh;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "tex none"
+                         "texc texc" ;
     &__div0{
-
+        grid-area:tex;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      &__h1{
+        font-size: 90px;
+      }
     }
     &__div1{
         position: absolute; 
         left: 60%;
-        top: 30%;
+        top: 12%;
        
         
         &__img{
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             border-radius: 10px;
             object-fit: cover;
         }
     }
+    &__div2 {
+        grid-area: texc;
+        text-align: center;
+        font-weight: bold;
+       
+        &__p{
+            margin-top: 30px;
+            font-size: 25px;
+            flex-grow: 30px;
+        }
+        &__gohome{
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+             &:hover{
+                background-color: black;
+                color: white;
+             }
+
+        }
+    }
+}
+.vec{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: rgba(133, 133, 133, 0.612);
+}
+.vec2{
+    position: absolute;
+    height: 325px;
+    width: 250px;
+    top: 10%;
+    left: 70%;
+    z-index: -2;
+    background-color: rgba(133, 133, 133, 0.612);
+}
+.vec3{
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    top: 70%;
+    left: 80%;
+    z-index: 2;
+    background-color: rgba(133, 133, 133, 0.612);
 }
