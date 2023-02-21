@@ -61,18 +61,27 @@
            position: relative;
            width: 80%;
            margin: 0 auto;
+           
            &__h2{
+                margin-left: 30px;
                 color: #fff;
-                margin-bottom: 50px;         
+                margin-bottom: 50px;     
+                border-bottom: 3px solid #fff;
+                padding-bottom: 3px;
+                max-width: min-content;    
            }
            &__slider{
             &__post{
                 position: relative;
-                margin: 20px;
+                &__content{
+                    margin: 30px;
+                }
                 &__thumb{
+                    object-fit: cover;
+                    border-radius: 5px;
                     border: 2px solid #fff;
                     width: 100%;
-                    height: auto;
+                    height: 500px;
                 }
                 &__info{
                     text-align: center;
@@ -123,11 +132,13 @@
         cursor: pointer;
         font-size: 40px;
         @media( max-width:1024px)
-            {font-size: 30px}
-            right: 40px;
+            {font-size: 30px;
+                right: 40px;}
+            
         @media( max-width: 700px)
-            {font-size: 20px;}
-            right: 30px;
+            {font-size: 20px;
+                right: 30px;}
+            
     }
     &__prev {
         position: absolute;
@@ -137,11 +148,13 @@
         cursor: pointer;
         font-size: 40px;
         @media( max-width:1024px)
-        {font-size: 30px}
-        right: 40px;
+        {font-size: 30px;
+            left: 40px;}
+        
         @media( max-width: 700px)
-        {font-size: 20px;}
-        right: 30px;
+        {font-size: 20px;
+            left: 30px;}
+        
         }
        
     
@@ -162,21 +175,26 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
+                
                 &__content{
+                    border-radius: 10px;
                     background-color: #000;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
+                    overflow: hidden;
+                    height: 400px;
                     &__img{
+                        object-fit: cover;
                         width: 100%;
-                        height: auto;
+                        min-height: 400px;
 
                     }
                     &__info{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        margin:10px 0px ;
                         color: #fff;
+                        height: 400px;
                         &__h2{
                             margin: 10px 0px;
                         }
