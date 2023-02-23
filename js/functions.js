@@ -3,9 +3,9 @@ $(function() {
   prevArrow: $(".inicio__prev"),
   nextArrow: $(".inicio__next"),
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  slidesMargin: 10,
+  
   autoplay: true,
   autoplaySpeed: 1500,
   pauseOnHover: true,
