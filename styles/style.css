@@ -375,7 +375,7 @@ a {
   text-align: center;
   padding: 20px 50px 20px 50px;
 }
-.section_2__content h2 {
+.section_2__content__eq {
   text-decoration: underline;
   margin: 40px;
 }
@@ -394,6 +394,11 @@ a {
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .section_2__content__cuadricula__content {
+    height: 300px;
+  }
+}
 @media (max-width: 700px) {
   .section_2__content__cuadricula__content {
     height: 200px;
@@ -404,24 +409,18 @@ a {
   width: 100%;
   overflow: hidden;
   height: 100%;
-  grid-column: 1fr;
 }
 .section_2__content__cuadricula__content__info {
   position: relative;
-  grid-column: 1fr;
   color: #fff;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .section_2__content__cuadricula__content__info {
-    height: 100%;
-  }
-}
 .section_2__content__cuadricula__content__info__h2 {
-  margin: auto 0px;
+  margin: 10px 0px;
 }
 @media (max-width: 700px) {
   .section_2__content__cuadricula__content__info__h2 {
+    margin-top: 35%;
     font-size: 25px;
   }
 }
