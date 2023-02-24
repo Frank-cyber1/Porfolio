@@ -7,7 +7,7 @@ $(function() {
   slidesToScroll: 1,
   
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 2000,
   pauseOnHover: true,
   responsive: [
     {
@@ -29,3 +29,29 @@ $(".option-contrast__black").on("click", function(event){
   $(".hl__header__option-contrast span").removeClass("active");
   $(this).addClass("active");
 })
+
+// $(document).ready(function() {
+//   $(".inicio__content__slider__post__info").hover(function() {
+//     $(".inicio__content__slider__post__content__thumb-sobre").css("background-color", "transparent");
+//   });
+//   $(".inicio__content__slider__post__info").mouseleave(function() {
+//     $(".inicio__content__slider__post__content__thumb-sobre").css("background-color", "#original-value");
+//   });
+// });
+// $(document).ready(function() {
+//   $(".inicio__content__slider__post__info").hover(
+//     function() {
+//       $(".inicio__content__slider__post__content__thumb-sobre").css("background-color", "transparent");
+//     },
+//     function() {
+//       $(".inicio__content__slider__post__content__thumb-sobre").css("background-color", "initial");
+//     }
+//   );
+// });
+$(document).ready(function() {
+  $(".inicio__content__slider__post__info").hover(function() {
+    $(".inicio__content__slider__post__content__thumb-sobre").toggleClass("transparent");
+    
+    
+  });
+});
