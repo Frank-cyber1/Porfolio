@@ -34,6 +34,9 @@ a {
     text-decoration: none;
 }
 .body__dark {
+    .hl__header__logo{
+    text-shadow:none;
+    }
     background-color: #000;
     color: #fff;
     a {

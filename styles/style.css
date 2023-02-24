@@ -101,6 +101,9 @@ a {
   background-color: #000;
   color: #fff;
 }
+.body__dark .hl__header__logo {
+  text-shadow: none;
+}
 .body__dark a {
   color: #fff;
   border-color: #fff !important;
@@ -124,7 +127,9 @@ a {
   padding: 10px 0;
 }
 .hl__header__logo {
+  text-shadow: -2px -2px 2px rgba(255, 255, 255, 0.8470588235), 2px 2px 2px rgba(255, 255, 255, 0.8470588235), -2px 2px 2px rgba(255, 255, 255, 0.8470588235), 2px -2px 2px rgba(255, 255, 255, 0.8470588235);
   font-size: 40px;
+  letter-spacing: 5px;
   text-align: center;
   font-family: "Concert One";
 }
@@ -350,17 +355,19 @@ a {
   margin: 40px;
 }
 .section_2__content__cuadricula {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .section_2__content__cuadricula__content {
+  height: 400px;
+  width: 500px;
   border-radius: 10px;
   background-color: #000;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
-  height: 400px;
 }
 .section_2__content__cuadricula__content__img {
   object-fit: cover;

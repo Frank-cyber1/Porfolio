@@ -14,7 +14,9 @@
         padding: 10px 0;
     }
     &__logo{
+       text-shadow: -2px -2px 2px #ffffffd8, 2px 2px 2px #ffffffd8 ,-2px 2px 2px #ffffffd8, 2px -2px 2px #ffffffd8;
         font-size: 40px;
+        letter-spacing:5px;
         text-align: center;
         font-family: 'Concert One';
     }
@@ -237,17 +239,22 @@
                 margin: 40px;
             }
             &__cuadricula{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                display: flex;
+                // grid-template-columns: repeat(2, 1fr);
+                flex-wrap: wrap;
+                justify-content: center;
                 gap: 20px;
                 
                 &__content{
+                    height: 400px;
+                    // max-width: 695px;
+                    width: 500px;
                     border-radius: 10px;
                     background-color: #000;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                     overflow: hidden;
-                    height: 400px;
+                   
                     &__img{
                         object-fit: cover;
                         width: 100%;
