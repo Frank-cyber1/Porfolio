@@ -35,7 +35,14 @@ a {
 }
 .body__dark {
     .hl__header__logo{
-    text-shadow:none;
+        -moz-text-stroke-color: #8dffcd;
+        -webkit-text-stroke-color: #8dffcd;
+        
+    // text-shadow:5px 5px 1px #8dffcd;
+    }
+    .section_2__content__cuadricula__content{
+  
+        box-shadow: 5px 5px 1px #8dffcd;
     }
     background-color: #000;
     color: #fff;

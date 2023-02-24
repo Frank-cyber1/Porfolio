@@ -14,11 +14,22 @@
         padding: 10px 0;
     }
     &__logo{
-       text-shadow: -2px -2px 2px #ffffffd8, 2px 2px 2px #ffffffd8 ,-2px 2px 2px #ffffffd8, 2px -2px 2px #ffffffd8;
+    color:transparent;
+  -moz-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width:1.5px;
+  -moz-text-stroke-color: #ffffff;
+  -webkit-text-stroke-color: #ffffff;
+  text-shadow: 5px 5px #000000;
         font-size: 40px;
         letter-spacing:5px;
         text-align: center;
-        font-family: 'Concert One';
+        font-family:'Roboto Mono';
+        @media (max-width: 1024px){
+            font-size: 30px;
+        }
+        @media (max-width: 700px){
+            font-size: 25px;
+        }
     }
     &__option-contrast{
         font-family: 'oxygen';
@@ -69,7 +80,7 @@
            
            &__h2{
                 position: absolute;
-                top: 10px;
+                top: 20px;
                 font-size: 20px;
                 margin-left: 30px;
                 color: #ffffff;
@@ -78,6 +89,10 @@
                 padding-bottom: 3px;
                 max-width: min-content;    
                 z-index: 3;
+                @media (max-width: 700px){
+                    font-size: 15px;
+                    top: 20%;
+                }
            }
            &__slider{
             margin-right: 50px;
@@ -248,43 +263,64 @@
                 &__content{
                     height: 400px;
                     // max-width: 695px;
-                    width: 500px;
+                    width: 400px;
                     border-radius: 10px;
                     background-color: #000;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                     overflow: hidden;
-                   
+                    @media (max-width: 700px){
+                        height: 200px;
+                    }
                     &__img{
                         object-fit: cover;
                         width: 100%;
-                        min-height: 400px;
+                       overflow: hidden;
+                       height: 100%;
+                       grid-column: 1fr;
 
                     }
                     &__info{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
+                        
+                        position: relative;
+                        grid-column: 1fr;
                         color: #fff;
-                        height: 400px;
+                        height: 100%;
+                        @media (max-width: 700px){
+                            height:100%;
+                        }
                         &__h2{
-                            margin: 10px 0px;
+                            margin: auto 0px;
+                            @media (max-width: 700px){
+                                font-size: 25px;
+                            }
                         }
                         &__descrip{
                             margin: 20px 0;
+                            @media (max-width: 700px){
+                                display: none;
+                            }
                         }
                         &__p{
                             margin: 20px 0;
+                            @media (max-width: 700px){
+                                display: none;
+                            }
                         }
                     
                     
                         &__button{
+                            position: absolute;
+                            left: 20%;
+                            right: 20%;
+                            bottom: 0px;
                             font-size: 20px;
                             color: #fff;
                             background-color: transparent;
                             border-bottom: 2px solid #fff;
                             cursor: pointer;
                             margin: 20px auto;
+                            justify-content: center;
                         }
                     
                     }
