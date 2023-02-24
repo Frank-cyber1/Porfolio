@@ -117,8 +117,11 @@
                     height: 100vh;
                 }
                 &__info{
-                    @media (max-width: 1024px){
-                        right: 15%;
+                    @media (max-width: 1024px){ 
+                        width: auto;
+                        right: 15px;
+                        left: 15px;
+                    top: 30vh;
                     }
                     position: absolute;
                     text-align: center;
@@ -150,11 +153,17 @@
                         font-size: 40px;
                         margin-top: 30px;
                         margin-bottom: 10px;
+                        @media( max-width: 700px)
+            {font-size: 30px;}
                     }
                     p {
                         margin: 30px;
+                        @media( max-width: 700px)
+                        {font-size: 15px;}
                     }
                     &__button {
+                        @media( max-width: 700px)
+                        {font-size: 15px;}
                         font-size: 20px;
                         background-color: transparent;
                         display: inline-block;

@@ -237,7 +237,10 @@ a {
 }
 @media (max-width: 1024px) {
   .inicio__content__slider__post__info {
-    right: 15%;
+    width: auto;
+    right: 15px;
+    left: 15px;
+    top: 30vh;
   }
 }
 .inicio__content__slider__post__info:hover {
@@ -258,8 +261,18 @@ a {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+@media (max-width: 700px) {
+  .inicio__content__slider__post__info h2 {
+    font-size: 30px;
+  }
+}
 .inicio__content__slider__post__info p {
   margin: 30px;
+}
+@media (max-width: 700px) {
+  .inicio__content__slider__post__info p {
+    font-size: 15px;
+  }
 }
 .inicio__content__slider__post__info__button {
   font-size: 20px;
@@ -273,6 +286,11 @@ a {
   margin-bottom: 30px;
   font-weight: bold;
   transition: all 0.5s;
+}
+@media (max-width: 700px) {
+  .inicio__content__slider__post__info__button {
+    font-size: 15px;
+  }
 }
 .inicio__content__slider__post__info__button:hover {
   border-color: transparent;
